@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatInputModule } from '@angular/material/input';
+ 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,9 +25,7 @@ registerLocaleData(localePt);
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatAutocompleteModule
+    ReactiveFormsModule 
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt' }    
