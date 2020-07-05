@@ -1,0 +1,34 @@
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="center-div">
+<div id='search-box'> 
+ <input [formControl]="searchItensCtrl" type="text" id='search-text' name='q'   autofocus/>
+
+
+<button id='search-button' type='submit'>                     
+ <i class="fa fa-search"></i> 
+</button>
+<ul class="search-result-list">
+ 
+    
+
+    <li *ngFor="let result of filteredItems">
+      <a  href="https://store.omelete.com.br/{{result.map.uri}}"  class="search-result-item">
+        <img  src="https://static-store.worldticket.com.br/{{result.map['images.url'][0]}}" alt="{{result.map.name}}">
+        <span class="product-name">
+            <span >{{result.map.name}} </span>
+            <span class="itemprice" data-value="itemprice">{{ result.map['salePrice'][0] | currency:'BRL':'symbol-narrow' }}</span>
+        </span>
+                                        
+    
+      </a>
+    </li>
+
+
+ </ul>
+ 
+ </div>
+ </div>

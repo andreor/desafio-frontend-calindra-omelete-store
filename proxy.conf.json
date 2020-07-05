@@ -1,0 +1,6 @@
+{
+    "/": {
+      "target": "https://cors-anywhere.herokuapp.com/http://localhost:4200",
+      "secure": false
+    }
+  }
